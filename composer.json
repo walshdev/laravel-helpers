@@ -1,0 +1,41 @@
+{
+    "name": "walshdev/laravel-helpers",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/walshdev/laravel-helpers",
+    "keywords": ["Laravel", "LaravelHelpers"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Walshdev\\LaravelHelpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Walshdev\\LaravelHelpers\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Walshdev\\LaravelHelpers\\LaravelHelpersServiceProvider"
+            ],
+            "aliases": {
+                "LaravelHelpers": "Walshdev\\LaravelHelpers\\Facades\\LaravelHelpers"
+            }
+        }
+    }
+}
